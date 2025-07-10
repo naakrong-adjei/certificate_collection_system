@@ -10,7 +10,7 @@ import { Dashboard, Students,Certificates, Programs, CollectionStatus, Reports }
 
 export const Layout = () => {
   const [activePage, setActivePage] = useState('Dashboard');
-
+  
   const renderActivePage = () => {
     switch (activePage) {
       case 'Students':
@@ -19,7 +19,7 @@ export const Layout = () => {
         return <Certificates />;
       case 'Programs':
         return <Programs />;
-      case 'Collection':
+      case 'Collection Status':
         return <CollectionStatus />;
       case 'Reports':
         return <Reports />;
@@ -31,11 +31,13 @@ export const Layout = () => {
 
   return (
     <div className="home">
-      <Sidebar setActivePage={setActivePage} activePage={activePage} />
+      <Sidebar activePage={activePage} setActivePage={setActivePage} />
+
       <div className="main-container">
         <Header />
         <div className="content">
           {renderActivePage()}
+          
         </div>
       </div>
     </div>
