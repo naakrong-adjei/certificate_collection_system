@@ -1,0 +1,121 @@
+/* Dashboard.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: gray;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-change {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.stat-change.positive {
+  color: green;
+}
+
+.stat-change.negative {
+  color: red;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.table-section {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th, .table-section td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-section th {
+  background-color: #f3f3f3;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.right-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.notifications {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-placeholder {
+  margin-top: 30px;
+}
+
+.chart-placeholder .pie {
+  height: 150px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
