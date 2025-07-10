@@ -48,6 +48,7 @@
   cursor: pointer;
   transition: background 0.3s;
   color: #333;
+  text-decoration: none;
 }
 .sidebar-link div{
   font-size: 14px;
