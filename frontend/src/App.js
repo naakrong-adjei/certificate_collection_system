@@ -1,11 +1,17 @@
-import './App.css';
-import { Sidebar } from './inc/Sidebar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Login } from './pages/Login';
+import {Layout} from './pages/Layout';
 
 function App() {
   return (
-    <div>
-      <Sidebar/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Layout />}>
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,62 +1,85 @@
 .sidebar {
   position: fixed;
   left: 0;
-  bottom: 0;
   top: 0;
-  background-color:#ffffff ;
+  bottom: 0;
   width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e2e2;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 200;
-  padding-top: 5px;
-  border-right: 1px solid var(--input);
 }
 
-.sidebar-title{
+.sidebar-title {
   display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid var(--input);
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e2e2e2;
 }
+
 .sidebar-title img {
-  height: 70px;
-  width: 70px;
-  align-items: center;
-}
-.sidebar-title p{
-  color: var(--title);
-  align-items: center;
-}
-.sidebar nav{
-  margin-top:10px;
-}
-.sidebar-link {
   height: 50px;
+  width: 50px;
+}
+
+.sidebar-title p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.sidebar nav {
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+.sidebar-link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 10px;
+  padding: 12px 20px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .sidebar-link:hover {
-  background-color: rgb(235, 235, 235);
-  border-left: 3px solid var(--primary);
-  color: var(--primary);
-}
-.sidebar-link:active {
-  background-color: rgb(235, 235, 235);
-  border-left: 1px solid var(--primary);
-}
-
-.sidebar-link img {
-  height: 24px;
-  margin-bottom: 4px;
+  background-color: #f3f3f3;
+  border-left: 4px solid var(--primary);
 }
 
 .sidebar-link div {
-  font-size: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+  color: var(--primary);
 }
 
 .sidebar-profile {
-  display: flex;
-  flex-direction: column;
-  
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e2e2e2;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.view-profile {
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.view-profile:hover {
+  text-decoration: underline;
 }
